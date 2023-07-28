@@ -1,0 +1,316 @@
+<html>
+
+<head>
+    <title>Arraiá Dev</title>
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url(Rakkas-Regular.ttf);
+        }
+        
+        @font-face {
+            font-family: mexicanTequila;
+            src: url(MexicanTequila.ttf);
+        }
+        
+        body {
+            padding: 0;
+            margin: 0;
+            background: url('340.jpg') repeat;
+        }
+        
+        * {
+            z-index: 10 !important;
+        }
+        
+        h1 {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            font-family: mexicanTequila, Helvetica, Arial, sans-serif;
+            color: white;
+            font-weight: 100;
+            font-size: 72px;
+            padding-top: 50px;
+            width: 100%;
+        }
+        
+        p {
+            text-align: center;
+            font-size: 32px;
+            color: white;
+            font-family: myFirstFont, Helvetica, Arial, sans-serif;
+        }
+        
+        .blackScreen {
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            z-index: -10 !important;
+        }
+        
+        .card-pessoa {
+            width: 300px;
+            display: inline-block;
+            padding: 0px;
+            margin: 15px;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .card-pessoa::after {
+            z-index: 100;
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: auto;
+            bottom: 0;
+            height: 75px;
+            width: 150px;
+            background: url('bandera.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        
+        .tiflux {
+            margin: auto;
+            position: absolute;
+            text-align: center;
+            display: block;
+            width: 200px;
+        }
+        
+        .card-pessoa::before {
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            z-index: 100;
+            content: "";
+            position: absolute;
+            top: 0;
+            right: auto;
+            left: 0;
+            bottom: 0;
+            height: 75px;
+            width: 150px;
+            background: url('bandera.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        
+        .pessoa-image {
+            width: 300px;
+            height: 300px;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .nome {
+            font-family: mexicanTequila, Helvetica, Arial, sans-serif;
+            font-size: 26px;
+        }
+        
+        .small {
+            font-size: 16px;
+            min-height: 75px;
+        }
+        
+        .fabio {
+            background-image: url('fabio.jpeg')
+        }
+        
+        .udo {
+            background-image: url('udo.jpeg')
+        }
+        
+        .bruno {
+            background-image: url('bruno.jpeg')
+        }
+        
+        .bia {
+            background-image: url('bia.jpeg')
+        }
+        
+        .brother {
+            background-image: url('brother.jpeg')
+        }
+        
+        .dudu {
+            background-image: url('dudu.jpeg')
+        }
+        
+        .malia {
+            background-image: url('malia.jpeg')
+        }
+        
+        .renato {
+            background-image: url('renato.jpeg')
+        }
+        
+        .ana {
+            background-image: url('ana.jpeg')
+        }
+        
+        .teff {
+            background-image: url('teff.jpeg')
+        }
+        
+        .ziro {
+            background-image: url('ziro.jpeg')
+        }
+        
+        .bup {
+            background-image: url('bup.jpeg')
+        }
+        
+        .duda_igor {
+            background-image: url('duda_igor.jpg')
+        }
+        
+        .dani {
+            background-image: url('daniel.jpeg')
+        }
+        
+        .amanda {
+            background-image: url('secret.jpeg')
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blackScreen"></div>
+
+    <h1>Arraia dos Dev!</h1>
+    <img src="tiflux.png" class="tiflux" />
+    <p>
+        Mas vossunce, ce bem vindo.
+        <br/> Aqui e a festanca da boa, guri!
+    </p>
+    <p>
+        Conhece os nosso modelo:
+    </p>
+
+    <div style="text-align: center; width: 100%;">
+        <div class="card-pessoa">
+            <div class="pessoa-image fabio"></div>
+            <p class="nome">
+                Padin Fábio
+            </p>
+            <p class="small">Milagrêro e consultor espiritual da mocidade, conduz tudo por aqui..</p>
+        </div>
+
+        <div class="card-pessoa">
+            <div class="pessoa-image bruno"></div>
+            <p class="nome">
+                Brunin Diesel
+            </p>
+            <p class="small">Ator de Roliwude famozao que veio pa ca codar com nois.</p>
+        </div>
+
+        <div class="card-pessoa">
+            <div class="pessoa-image udo"></div>
+            <p class="nome">
+                Udin
+            </p>
+            <p class="small">Menino alemao simpatico por demais, genio dos codigo de tras (beckiend).</p>
+        </div>
+
+        <div class="card-pessoa">
+            <div class="pessoa-image teff"></div>
+            <p class="nome">
+                Teff
+            </p>
+            <p class="small">Codadora, lideranca dos chernobalas, bagua de gente fina.</p>
+        </div>
+
+        <div class="card-pessoa">
+            <div class="pessoa-image bup"></div>
+            <p class="nome">
+                Bup
+            </p>
+            <p class="small">Mas pensa num minino alegre, che! Sempre chame pra festa</p>
+        </div>
+
+        <div class="card-pessoa">
+            <div class="pessoa-image renato"></div>
+            <p class="nome">
+                Renatao
+            </p>
+            <p class="small">Faz umas receitas de codigo mais que e bom por demais..</p>
+        </div>
+
+        <div class="card-pessoa">
+            <div class="pessoa-image bia"></div>
+            <p class="nome">
+                Bia
+            </p>
+            <p class="small">Gente boa por dimais, sempre cuidando para tudo estar certo.</p>
+        </div>
+
+        <div class="card-pessoa">
+            <div class="pessoa-image duda_igor"></div>
+            <p class="nome">
+                Dudin e Igo
+            </p>
+            <p class="small">Casal 20 da plantacao de codigo e qualidade.</p>
+        </div>
+
+        <div class="card-pessoa">
+            <div class="pessoa-image brother"></div>
+            <p class="nome">
+                Brodin
+            </p>
+            <p class="small">Lenhador de bonsai, sempre disponivel.</p>
+        </div>
+
+        <div class="card-pessoa">
+            <div class="pessoa-image ziro"></div>
+            <p class="nome">
+                Ziro liro
+            </p>
+            <p class="small">Queridao da familia chernobyl. Recruta jovem do conjuntin!</p>
+        </div>
+
+        <div class="card-pessoa">
+            <div class="pessoa-image malia"></div>
+            <p class="nome">
+                Malia
+            </p>
+            <p class="small">Mais nova integrante da familhea. Fronts prodigious!</p>
+        </div>
+
+        <div class="card-pessoa">
+            <div class="pessoa-image dani"></div>
+            <p class="nome">
+                Dani boy
+            </p>
+            <p class="small">Mas que guri gente fina! Codador de primeira linha.</p>
+        </div>
+
+        <div class="card-pessoa">
+            <div class="pessoa-image ana"></div>
+            <p class="nome">
+                Anabel
+            </p>
+            <p class="small">Mascote e cantora do nosso querido rincao.</p>
+        </div>
+
+        <div class="card-pessoa">
+            <div class="pessoa-image amanda"></div>
+            <p class="nome">
+                Amandin
+            </p>
+            <p class="small">Codadora da cidade vizinha, sempre enviando frutos pra colheita!</p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
